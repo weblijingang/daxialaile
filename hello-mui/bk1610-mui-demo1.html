@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MUI案例DEmo</title>
+	<!-- 一.搭建环境 -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+	<!-- 主要的CSS文件 -->
+	<link rel="stylesheet" href="css/mui.min.css">
+	<style>
+		.mui-imgs img{
+			width: 100%;
+		}
+		body{
+			padding-bottom: 50px;
+		}
+	</style>
+</head>
+<body>
+	<ul class="mui-table-view"> 
+	        <li class="mui-table-view-cell mui-collapse mui-active">
+	            <a class="mui-navigate-right" href="#">面板1</a>
+	            <div class="mui-collapse-content">
+	                <p>面板1子内容</p>
+	            </div>
+	        </li>
+	        <li class="mui-table-view-cell mui-collapse">
+	            <a class="mui-navigate-right" href="#">面板</a>
+	                <div class="mui-collapse-content">
+	                <p>面板2子内容</p>
+	            </div>
+	        </li>
+	        <li class="mui-table-view-cell mui-collapse">
+	            <a class="mui-navigate-right" href="#">面板3</a>
+	            <div class="mui-collapse-content">
+	                <p>面板3子内容</p>
+	            </div>
+	        </li> 
+	   
+    </ul>
+    <div class="box">
+    	<div id="sheet1" class="mui-popover mui-popover-bottom mui-popover-action ">
+		    <!-- 可选择菜单 -->
+		    <ul class="mui-table-view">
+		      <li class="mui-table-view-cell">
+		        <a href="#">菜单1</a>
+		      </li>
+		      <li class="mui-table-view-cell">
+		        <a href="#">菜单2</a>
+		      </li>
+		    </ul>
+		    <!-- 取消菜单 -->
+		    <ul class="mui-table-view">
+		      <li class="mui-table-view-cell">
+		        <a href="#sheet1"><b>取消</b></a>
+		      </li>
+		    </ul>
+		</div>
+    </div>
+    <div class="miub">
+    	<button class="mui-btn mui-btn-success mui-btn-outlined">MUI按钮</button>
+    </div>
+    <div class="muikapian">
+    	<div class="mui-card">
+			<!--页眉，放置标题-->
+			<div class="mui-card-header mui-card-media">
+				<img src="images/logo.png" />
+				<div class="mui-media-body">
+					小M
+					<p>发表于 2016-06-30 15:30</p>
+				</div>
+			</div>
+			<!--内容区-->
+			<div class="mui-card-content mui-imgs">
+				<img src="images/yuantiao.jpg" alt="">
+			</div>
+			<!--页脚，放置补充信息或支持的操作-->
+			<div class="mui-card-footer">页脚</div>
+		</div>
+    </div>
+    <div class="lunbo">
+    	<div class="mui-slider">
+		  <div class="mui-slider-group mui-slider-loop">
+		  	 <!--支持循环，需要重复图片节点-->
+    		<div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="images/yuantiao.jpg" /></a></div>
+		    <div class="mui-slider-item"><a href="#"><img src="images/cbd.jpg" /></a></div>
+		    <div class="mui-slider-item"><a href="#"><img src="images/muwu.jpg" /></a></div>
+		    <div class="mui-slider-item"><a href="#"><img src="images/shuijiao.jpg" /></a></div>
+		    <div class="mui-slider-item"><a href="#"><img src="images/yuantiao.jpg" /></a></div>
+		     <!--支持循环，需要重复图片节点-->
+    		<div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="images/cbd.jpg" /></a></div>
+		  </div>
+		</div>
+    </div>
+    <div class="mui-content">
+    <div class="mui-row">
+        <div class="mui-col-sm-6 mui-col-xs-12">
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right">
+                    Item 1    
+                </a>
+            </li>
+        </div>
+        <div class="mui-col-sm-6 mui-col-xs-12">
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right">
+                    Item 1
+                </a>
+            </li>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/mui.min.js"></script>
+<script>
+	//传入toggle参数，用户无需关心当前是显示还是隐藏状态，mui会自动识别处理；
+	// mui('#sheet1').popover('toggle');
+	// 
+	// 一：依赖文件引入（环境搭建）
+	// 二：做的相应API：（静态结构满足）
+	// 三：js初始化；
+</script>
+</html>
