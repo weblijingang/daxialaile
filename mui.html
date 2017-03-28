@@ -121,7 +121,7 @@
 <script type="text/javascript">
   var gallery = mui('.mui-slider');
   gallery.slider({
-    interval:5000//自动轮播周期，若为0则不自动播放，默认为0；
+    interval:1000//自动轮播周期，若为0则不自动播放，默认为0；
   });
   var oBtn=document.getElementById("meS");
   oBtn.addEventListener("tap", function(){
@@ -132,6 +132,7 @@
       mui.prompt('棒棒哒','deftext','请输入您的评价',['true','false'],test,'div');
     }
     function test(e){
+
       console.log(e.index);
       if(e.index==0){
         alert("感谢您的反馈")
