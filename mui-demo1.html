@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="css/mui.min.css">
+	<script src="js/mui.min.js"></script>
+	<style>
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		.container{
+			height: 100%;
+		}
+		.navLists li{
+			padding: 10px 15px;
+			list-style: none;
+		}
+	    .navLists li a{
+	    	text-decoration: none;
+	    	color: white;
+
+	    }
+	    .txtS {
+	    	display: block;
+	    	position: absolute;
+	    	left: 0px;
+	    	width: 100%;
+	    	bottom: 0px;
+	    	/*opacity: 0.8;*/
+	    	/*background: black;*/
+	    	background: rgba(0,0,0,0.4);
+	    	padding: 20px 20px;
+	    	color: white;
+	    	font-size: 20px;
+	    }
+	    .artciles {
+	    	margin-top: 30px;
+	    }
+	    .mui-scroll-wrapper.scrl{
+	    	overflow: scroll;
+	    }
+	    .contImg img{
+	    	width: 100%;
+	    }
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<!-- 侧滑导航根容器 -->
+		<div class="mui-off-canvas-wrap mui-draggable">
+		  <!-- 主页面容器 -->
+		  <div class="mui-inner-wrap">
+		     <!-- 菜单容器 -->
+		    <aside class="mui-off-canvas-left">
+		      <div class="mui-scroll-wrapper">
+		        <div class="mui-scroll">
+		            <ul class="navLists">
+		            	<li>
+		            		<a href="#home.html">
+		            			首页
+		            		</a>
+		            	</li>
+		            	<li>
+		            		<a href="#news.html">
+		            			新闻
+		            		</a>
+		            	</li>
+		            	<li>
+		            		<a href="#bao.html">
+		            			宋小宝
+		            		</a>
+		            	</li>
+		            	<li>
+		            		<a href="#bao.html">
+		            			宋小宝
+		            		</a>
+		            	</li>
+		            	<li>
+		            		<a href="#bao.html">
+		            			宋小宝
+		            		</a>
+		            	</li>
+		            	<li>
+		            		<a href="#bao.html">
+		            			宋小宝
+		            		</a>
+		            	</li>
+		            </ul>
+		        </div>
+		      </div>
+		    </aside>
+		    <!-- 主页面标题 -->
+		    <header class="mui-bar mui-bar-nav">
+		      <a class="mui-icon mui-action-menu mui-icon-bars mui-pull-left" id="meS"></a>
+		      <h1 class="mui-title">我的应用商城</h1>
+		    </header>
+		    <!-- 主页面内容容器 -->
+		    <div class="mui-content mui-scroll-wrapper scrl">
+		      <div class="mui-scroll">
+		       	  <!-- 主页面的内容 -->
+		       	  <!-- 一。商品展示 -->
+		       	  <div class="mui-slider">
+					  <div class="mui-slider-group mui-slider-loop">
+					    <!--支持循环，需要重复图片节点-->
+					    <div class="mui-slider-item mui-slider-item-duplicate">
+					    	<a href="#">
+					    		<img src="images/yuantiao.jpg" />
+					    		
+					    	</a>
+					    	<p class="txtS">
+					    		你在桥上看风景，我在桥下看你
+					    	</p>
+					    </div>
+					    <div class="mui-slider-item">
+					    	<a href="#">
+					    		<img src="images/cbd.jpg" />
+					    		<p class="txtS">
+						    		你在桥上看风景，我在桥下看你
+						    	</p>
+					    	</a>
+					    </div>
+					    <div class="mui-slider-item">
+					    	<a href="#">
+					    		<img src="images/muwu.jpg" />
+					    		<p class="txtS">
+						    		你在桥上看风景，我在桥下看你
+						    	</p>
+					    	</a>
+
+					    </div>
+					    <div class="mui-slider-item">
+					    	<a href="#">
+					    		<img src="images/shuijiao.jpg" />
+					    		<p class="txtS">
+						    		你在桥上看风景，我在桥下看你
+						    	</p>
+					    	</a>
+					    </div>
+					    <div class="mui-slider-item">
+					    	<a href="#">
+					    		<img src="images/yuantiao.jpg" />
+					    		<p class="txtS">
+						    		你在桥上看风景，我在桥下看你
+						    	</p>
+					    	</a>
+					    </div>
+					    <!--支持循环，需要重复图片节点-->
+					    <div class="mui-slider-item mui-slider-item-duplicate">
+					    	<a href="#">
+					    		<img src="images/cbd.jpg" />
+					    		<p class="txtS">
+						    		你在桥上看风景，我在桥下看你
+						    	</p>
+					    	</a>
+					    </div>
+					  </div>
+			      </div>
+			      <div class="mui-input mui-popup-input mui-input-row">
+			      	  <label for="">弹出输入框sss</label>
+				      <input type="button" id="btn1" value='意见反馈'>
+			      </div>
+			      <!-- 最新文章 -->
+			      <div class="artciles">
+			      	 <h1>最近文章</h1>
+			      	 <div class="mui-card">
+						<!--页眉，放置标题-->
+						<div class="mui-card-header mui-card-media">
+							<img src="images/logo.png" />
+							<div class="mui-media-body">
+								小M
+								<p>发表于 2016-06-30 15:30</p>
+							</div>
+						</div>
+						<!--内容区-->
+						<div class="mui-card-content contImg">
+							<img src="images/yuantiao.jpg" alt="">
+						</div>
+						<!--页脚，放置补充信息或支持的操作-->
+						<div class="mui-card-footer">
+							<a class="mui-card-link">Like</a>
+							<a class="mui-card-link">Comment</a>
+							<a class="mui-card-link">Read more</a>
+						</div>
+					</div>
+			      </div>
+
+			      <!-- 开关  -->
+			      <div class="row">
+			        <h1>开关控件</h1>
+			      	<!-- 开关打开状态，多了一个.mui-active类 -->
+					<div class="mui-switch mui-active">
+					  <div class="mui-switch-handle"></div>
+					</div>
+			      </div>
+			      <!-- div.脚部 -->
+
+			      <div class="footer" id="footer">
+			      	 <h1>webAPP 精彩更多，不容错过！！</h1>
+			      	 <p>联系人：千锋第一帅：王银亮</p>
+			      </div>
+		      </div>
+		    </div>  
+		  </div>
+		</div>
+	</div>
+</body>
+<script>
+
+	//获得slider插件对象
+	var gallery = mui('.mui-slider');
+		gallery.slider({
+		  interval:3000//自动轮播周期，若为0则不自动播放，默认为0；
+		});
+        
+        /*增加一个点击滑出*/
+
+        var meS = document.getElementById("meS");
+         meS.addEventListener("tap",function(){
+         	mui('.mui-off-canvas-wrap').offCanvas('show');
+         });
+
+		/*touch手势*/ 
+    var fot = document.getElementById("footer");
+        fot.addEventListener("tap",function () {
+		  console.log("tap event trigger");
+		})
+	var oBtn1 = document.getElementById("btn1");
+	    /*点击调出弹出框*/
+	    oBtn1.onclick = function(){
+	    	mui.prompt('棒棒哒','deftext','请输入您的评价',['true','false'],test2,'div');
+	    }
+	    function test(e){
+	    	console.log("aaaaasssssss");
+	    	if(e.index==0){
+	    		alert("感谢您的反馈")
+	    	}else{
+	    		alert("请继续提交意见");
+	    	}
+	    }
+	    function test2(event){
+	    	console.log(event.index);
+	    	// console.log(this);
+	    	// mui-popup-button
+	    	if(event.index == 0){
+	    		alert("谢谢您的厚爱");
+	    	}else{
+	    		alert("尼玛hi,哪里做的不好")
+	    	}
+	    }
+		// mui.alert("aaaa","这是一个警告","警告",test);
+		// mui.confirm("确认","这是确认",["是","否"],test2)
+		/*作业：1. MUI 的一个webApp项目*/
+</script>
+</html>
